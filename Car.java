@@ -1,8 +1,8 @@
-package com.desarrollos.entde;
+
 
 import java.util.Arrays;
 import java.awt.Color;
-/**
+/*
  * Class that models objects of type "car"
  * 
  * @Java MOOC team, UC3M
@@ -16,14 +16,14 @@ public class Car
     Garage theGarage=null;
 
     
-    /**
+    /*
      * Constructor of a car specifying the garage object
      */
     public Car (Garage g){
     	theGarage = g;
     }
-    /**
-     * Method that is being always invoked when the program is running
+    /*
+     * Method that is being always involved when the program is running
      * @throws InterruptedException 
      */
     public static void main(String[] args) throws InterruptedException{
@@ -39,7 +39,7 @@ public class Car
 //        turnHeadlightsOff();
     }    
 
-    /**
+    /*
      * Accelerate the car
      * @throws InterruptedException 
      */
@@ -54,12 +54,12 @@ public class Car
         }
     }
     
-    /**
+    /*
      * Slow down the car
      * @throws InterruptedException 
      */
     public void slowDown() throws InterruptedException{
-    	string c = new string("     *");
+    	String c = new string("     *");
     	for(int i=0; i<5; i++)
         {
         	System.out.print(c);
@@ -69,19 +69,19 @@ public class Car
     	System.out.println();
     }    
     
-    /**
+    /*
      * Move the car downwards
      * @throws InterruptedException 
      */    
     public void moveDown() throws InterruptedException{
-    	string c = new string("\t\t\t\t  *"));
-    	for(int i=0, i<5, i++)
+    	String c = new String("\t\t\t\t  *");
+    	for(int i=0; i<5; i++)
         {
-    		if(i!=4)
-    			System.out.println(c);
+    		if(i!=4) {
+    			System.out.println(c);}
     		else 
-    			System.out.print(c);
-        	Thread.sleep(1000);
+    			{System.out.print(c);
+        	Thread.sleep(1000);}
         }
     }
     
